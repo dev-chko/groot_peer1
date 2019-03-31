@@ -1,0 +1,164 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hyperledger Fabric Tuna Application</title>
+    <link rel="icon" href="favicon.png" type="image/gif">
+
+    <!-- require jquery and bootstrap scripts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    
+    <!-- adding style here -->
+    <style type="text/css">
+      header{
+        background-color: lightgray;
+        font-size:20px;
+        padding:15px;
+      }
+      header, .form-group{
+        margin-bottom: 3%;
+      }
+      .form-group{
+        width:50%;
+      }
+      #body{
+        margin-left:3%;
+        margin-right:3%;
+      }
+      .form-control{
+        margin: 8px;
+      }
+      #right_header{
+        width:20%;
+        font-size:15px;
+        margin-right:0px;
+      }
+      #left_header{
+        margin-left:0;
+        width:40%;
+        display:inline-block;
+      } 
+      #id {
+        width:49%;
+        display: inline-block;
+      }
+      table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+      }
+      td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+      }
+      tr:nth-child(even) {
+          background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body ng-app="application" ng-controller="appController">
+     <section class="register_area p_120">
+        <div class="container">
+            <div class="main_title">
+              <h2>기술임치 계약신청</h2>
+              <p>양식을 작성해주세요!</p>
+          </div>
+            <div class="register_area_inner row">
+                <form action="" method="POST">
+            <table class="table">
+                <tbody>
+                    <tr>
+                      <td colspan="9">
+                          <h4>기술자료 임치 신청서</h4>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">기술 임치 신청자</th>
+                      <td>
+                        <input type="text" name="User_user_id" id=""  placeholder="신청자" title="제호"/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">임치 기술 명칭</th>
+                      <td>
+                        <input type="text" name="title" id=""  placeholder="기술 명칭 또는 사업명" title="제호"/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">기술 종류 </th>
+                      <td>
+                        <input type="text" name="sort" id=""  placeholder="ex금속재료" title=""/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">임치 제공 기간 </th>
+                      <td>
+                            <input type="text" name="e_date" id=""  placeholder="" title="제호"/>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p>기본정보 공시동의</p>
+                      </td>
+                      <td colspan="2">
+                        <input type="radio"/><label>예</label>
+                        <input type="radio"/><label>아니오</label>
+                      </td>
+                      <td colspan="6">
+                        <p>※ 공시내용 : 임치물 제호, 개발인·사용인 기업명 및 주소, 임치기술의 분류ㆍ종류ㆍ임치연월일</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="9">
+                        <p>「대·중소기업 상생협력 촉진에 관한 법률」 제24조의2 내지 제24조의5에 따라 위와 같이 기술자료 임치를 신청합니다.</p>
+                        <p></p>
+                        <p>20 년 월 일</p>
+                        <p></p>
+                        <p>신청인(개발인) : 대표자 (인)</p>
+                        <p></p>
+                        <p>대·중소기업·농어업협력재단 사무총장 귀하</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="9">
+                        <p>1. 대리인임을 증명하는 서류 각 1부(대리인이 신청하는 경우)</p>
+                        <p>2. 신분증 사본 각 1부</p>
+                        <p>3. 사업자등록증 및 법인인감증명서(법인사업자에 한함)</p>
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+                </form>
+            </div>
+        </div>
+        <div class="button-group-area mt-40 col-md-6">
+            <a href="#" class="genric-btn primary circle arrow">임시저장<span class="lnr lnr-arrow-right"></span></a>
+            <a href="mypage" class="genric-btn primary circle arrow" onclick="alert('제출되었습니다')">제출<span class="lnr lnr-arrow-right"></span></a>
+            <a href="main" class="genric-btn primary circle arrow" onclick="alert('취소되었습니다')">취소<span class="lnr lnr-arrow-right"></span></a>
+
+        </div>
+
+    <!-- requiring the angular page 
+    <script type="text/javascript" src="app.js"> </script> -->
+    <script>
+      function add_cont() { // 기술 등록
+
+      }
+
+      function get_tech() { // 기술 조회
+
+      }
+
+      $(function() {
+         
+
+      });
+    </script>
+  </body>
+</html>
